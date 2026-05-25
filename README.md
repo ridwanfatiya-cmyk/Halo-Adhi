@@ -3,186 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Some Message For You ❤️</title>
+    <title>Satu Atap Tenang ☕</title>
     <style>
-        /* Mengatur suasana warna latar belakang yang hangat dan menenangkan */
         body {
             margin: 0;
             padding: 0;
-            background-color: #4a121a; /* Merah marun gelap yang teduh */
-            color: #fff5f5; /* Putih gading agar tidak kontras menusuk mata */
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #3d141a; /* Marun gelap teduh, nyaman di mata */
+            color: #f7ebeb; 
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             line-height: 1.6;
         }
-
         .container {
-            max-width: 600px;
-            width: 90%;
-            text-align: center;
-            padding: 40px 20px;
+            max-width: 550px;
+            width: 88%;
+            padding: 30px 20px;
         }
-
-        /* Animasi hati pink pastel lembut */
-        .heart-icon {
-            font-size: 50px;
-            color: #ffb3c6; /* Pink pastel */
-            display: inline-block;
-            animation: pulse 2s infinite;
-            margin-bottom: 20px;
+        /* Foto Profil Bulat */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ffb3c6;
+            margin: 0 auto 20px auto;
+            display: block;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); filter: drop-shadow(0 0 10px #ffb3c6); }
-            100% { transform: scale(1); }
-        }
-
         h1 {
-            font-size: 2rem;
+            font-size: 1.6rem;
             color: #ffc2d1;
-            margin-bottom: 10px;
+            text-align: center;
+            margin-bottom: 15px;
         }
-
-        .opening-text {
-            font-size: 1.1rem;
+        p {
+            font-size: 1rem;
             opacity: 0.9;
-            margin-bottom: 40px;
         }
-
-        /* Bagian Tombol Interaktif */
+        .opening-text {
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+        /* Kotak Quotes Tokoh */
+        .quote-box {
+            background-color: #4f1b22;
+            border-left: 4px solid #ff75a0;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 25px 0;
+            font-style: italic;
+        }
+        .quote-author {
+            display: block;
+            text-align: right;
+            font-style: normal;
+            font-size: 0.85rem;
+            color: #ffb3c6;
+            margin-top: 5px;
+        }
+        /* Bagian Akordion/Tombol */
         .box-container {
             display: flex;
             flex-direction: column;
-            gap: 15px;
-            margin-bottom: 40px;
+            gap: 12px;
+            margin-top: 20px;
         }
-
         .secret-box {
-            background-color: #5c1d24;
-            border: 1px solid #7a2a33;
-            border-radius: 12px;
+            background-color: #521c23;
+            border: 1px solid #6b252e;
+            border-radius: 8px;
             padding: 15px;
             cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background 0.2s;
         }
-
         .secret-box:hover {
-            background-color: #6e252d;
-            transform: translateY(-2px);
+            background-color: #5f2129;
         }
-
         .box-title {
             margin: 0;
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: #ffb3c6;
             font-weight: 600;
         }
-
-        /* Menyembunyikan pesan sebelum diklik */
         .box-content {
             display: none;
             margin-top: 10px;
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: #ffffff;
-            border-top: 1px dashed #7a2a33;
+            border-top: 1px dashed #6b252e;
             padding-top: 10px;
             text-align: left;
         }
-
-        /* Bagian Penutup & Tombol WA */
+        /* Penutup */
         .closing {
-            margin-top: 50px;
-            border-top: 1px solid #5c1d24;
-            padding-top: 30px;
+            margin-top: 40px;
+            text-align: center;
+            border-top: 1px solid #4f1b22;
+            padding-top: 20px;
         }
-
         .wa-button {
             display: inline-block;
-            background-color: #ff75a0; /* Tombol pink cerah */
+            background-color: #ff75a0;
             color: white;
             text-decoration: none;
-            padding: 12px 25px;
-            border-radius: 30px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
             font-weight: bold;
-            margin-top: 15px;
-            transition: background 0.3s;
-            box-shadow: 0 4px 15px rgba(255, 117, 160, 0.4);
-        }
-
-        .wa-button:hover {
-            background-color: #ff5285;
+            margin-top: 10px;
+            box-shadow: 0 4px 10px rgba(255, 117, 160, 0.3);
         }
     </style>
 </head>
 <body>
-
+    <!-- Ganti dengan file musikmu jika ada -->
     <div class="container">
-        <!-- Ikon Hati -->
-        <div class="heart-icon">💖</div>
-
-        <!-- 1. Pembuka & Validasi -->
-        <h1>Hai, ini pesan singkat yang aku siapin buat lu...</h1>
+        <!-- Ganti dengan nama file fotomu -->
+        <img src="Phoyonya.JPEG" alt="Teman" class="profile-img">
+        <h1>Good Morning... ✨</h1>
         <p class="opening-text">
-            Aku tahu beberapa hari ini rasanya berat banget buat kamu. Menunggu pengumuman itu melelahkan, dan isi kepala lu mungkin lagi berisik banget karena ekspektasi orang lain. Bingung, cemas, takut... itu semua wajar, kok. Kamu gak salah kalau merasa begitu saat ini.
+            Hari ini hari H pengumuman ya? Wajar banget kalau lu lagi deg-degan atau overthinking sekarang. Lu udah ngambil langkah yang berani buat memperjuangkan masa depan lu, dan lu udah berhasil ngelewatin itu sampai titik ini. Lu keren, beneran.
         </p>
-
-        <!-- 2. Konten Bukti Nyata (Interaktif) -->
-        <p style="color: #ffc2d1; font-weight: bold;">Klik kotak-kotak di bawah ini:</p>
-        
+        <!-- Quotes Tokoh Dunia (Henry Ford cocok untuk Teknik Industri / Bisnis) -->
+        <div class="quote-box">
+            "Failure is simply the opportunity to begin again, this time more intelligently."
+            <span class="quote-author">— Henry Ford</span>
+        </div>
+        <p style="color: #ffc2d1; font-size: 0.9rem; text-align: center; margin-bottom: 15px;">
+            (Klik kotak di bawah buat buka pesan + nyalain musik 🎵)
+        </p>
         <div class="box-container">
             <!-- Kotak 1 -->
             <div class="secret-box" onclick="toggleBox(this)">
-                <p class="box-title">🎁 Tentang Hasil Ujianmu Nanti...</p>
+                <p class="box-title">🎯 Soal TI UI & Sekolah Bisnis...</p>
                 <div class="box-content">
-                    Apapun warna yang muncul di layarmu nanti—mau itu hijau ataupun warna lain—itu <strong>sama sekali tidak mengurangi nilai dirimu</strong>. Hasil ujian itu cuma layar penunjuk jalan, bukan penentu mutlak masa depanmu. Kamu tetap manusia yang hebat dengan proses yang luar biasa.
+                    Lu milih Teknik Industri atau Sekolah Bisnis karena lu emang punya minat di sana. Pilihan kampus lu emang tinggi dan kompetitif, tapi itu bukti kalau lu punya ambisi yang bagus. Apapun hasilnya nanti jam 3 sore, ambisi dan isi kepala lu gak bakal hilang cuma karena hasil satu ujian. 
                 </div>
             </div>
-
             <!-- Kotak 2 -->
             <div class="secret-box" onclick="toggleBox(this)">
-                <p class="box-title">🎁 Tentang Krisis Kepercayaan dari Orang Lain...</p>
+                <p class="box-title">👥 Kalau lu merasa ragu karena orang lain...</p>
                 <div class="box-content">
-                    Dunia mungkin gak lihat seberapa keras kamu berjuang sendirian, tapi aku bisa rasain itu kok. Jangan biarkan keraguan orang lain bikin kamu lupa kalau kamu adalah orang yang tangguh, baik, dan punya banyak potensi yang belum mereka tahu. Aku bangga banget sama prosesmu sampai titik ini.
+                    Orang lain cuma bisa ngomong atau berkomentar, tapi mereka gak tahu gimana perjuangan lu bagi waktu setahun ini. Gak usah dengerin yang bikin lu drop. Standar sukses lu, lu sendiri yang nentuin, bukan ekspektasi orang lain. temen-temen lu dan orang tua lu cuman berharap yang terbaik buat lu.
                 </div>
             </div>
-
             <!-- Kotak 3 -->
             <div class="secret-box" onclick="toggleBox(this)">
-                <p class="box-title">🎁 Yang Perlu Kamu Ingat...</p>
+                <p class="box-title">🚪 Apapun warnanya nanti...</p>
                 <div class="box-content">
-                    Kuliah itu cuma salah satu dari ribuan jalan menuju sukses. Tempatmu bersinar tidak ditentukan oleh nama besar kampus, tapi oleh besarnya semangat yang kamu punya. Kamu akan tetap sampai di tempat terbaikmu, dengan caramu sendiri.
+                    Kalau hijau, kita selebrasi bareng pake pecel lele itu. Kalau ternyata belum rezeki, lu harus ingat kalau ini bukan akhir dari segalanya. Masih banyak jalan lain (jalur mandiri, dll) dan mental lu udah kebentuk jadi lebih kuat lewat proses kemarin. Lu gak bakal mulai dari nol lagi.
                 </div>
             </div>
         </div>
-
-        <!-- 3. Penutup & Akses Kontak -->
+        <!-- Bagian Akhir -->
         <div class="closing">
-            <p>Apapun hasilnya nanti, gw bakal tetap jadi temen lu, anjay... agak geli jujur <em>I'm always in your corner.</em></p>
-            <!-- Ganti nomor di bawah ini dengan nomor WA-mu (Gunakan format 62 di depan) -->
-            <a href="https://wa.me/62895402920321?text=Hai,%20makasih%20ya%20web-nya.%20Aku%20butuh%20temen%20ngobrol%20sekarang..." class="wa-button" target="_blank">
-                Klik di sini kalau kamu butuh temen ngobrol sekarang ❤️
+            <p>Nanti sore setelah lihat pengumuman, Apapun hasilnya, <em>I've got your back.</em></p>
+            <a href="https://wa.me/628123456789?text=Gue%20udah%20buka%20webnya,%20thanks%20ya..." class="wa-button" target="_blank">
+                Pencet di sini kalau butuh temen ngobrol ☕
             </a>
         </div>
     </div>
-
-    <!-- JavaScript Sederhana untuk Efek Klik -->
     <script>
         function toggleBox(element) {
-            // Mengambil elemen konten di dalam kotak yang diklik
+            var audio = document.getElementById("myAudio");
+            audio.play().catch(function(e) { console.log("Audio play blocked"); });
             var content = element.querySelector('.box-content');
-            
-            // Mengubah status tampilannya (buka/tutup)
             if (content.style.display === "block") {
                 content.style.display = "none";
-                element.style.backgroundColor = "#5c1d24";
             } else {
                 content.style.display = "block";
-                element.style.backgroundColor = "#6e252d";
             }
         }
     </script>
